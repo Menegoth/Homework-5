@@ -13,7 +13,7 @@ namespace Part_2
         {
 
             int[] numbers = GenerateArray(10);
-            numbers = Reverse(numbers);
+            Reverse(numbers);
             PrintArray(numbers);
 
         }
@@ -37,7 +37,7 @@ namespace Part_2
         }
 
         //reverse array of int type
-        static int[] Reverse(int[] array)
+        static void Reverse(int[] array)
         {
             //temp holding variables
             int temp, a, b;
@@ -58,8 +58,6 @@ namespace Part_2
                 array[array.Length - i - 1] = b;
 
             }
-            
-            return array;
 
         }
 
